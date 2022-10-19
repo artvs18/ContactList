@@ -8,7 +8,8 @@
 import UIKit
 
 class ContactListViewController: UITableViewController {
-    private var personsList = Person.getPersonsList()
+    
+    var personsList: [Person]!
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,3 +33,4 @@ class ContactListViewController: UITableViewController {
         personDetailsVC?.person = personsList[indexPath.row]
     }
 }
+

@@ -20,5 +20,4 @@ class PersonDetailsViewController: UIViewController {
         emailTextView.text = person.email
         phoneTextView.text = person.phone
     }
-
 }

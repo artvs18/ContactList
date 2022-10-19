@@ -16,7 +16,7 @@ struct Person {
     }
     
     static func getPersonsList() -> [Person] {
-        let dataManager = DataManager()
+        let dataManager = DataStore()
         
         var names = dataManager.names.shuffled()
         var surnames = dataManager.surnames.shuffled()

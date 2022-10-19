@@ -1,11 +1,11 @@
 //
-//  DataManager.swift
+//  DataStore.swift
 //  ContactList
 //
 //  Created by Artemy Volkov on 18.10.2022.
 //
 
-class DataManager {
+class DataStore {
     let names = [
         "Tim",
         "John",
