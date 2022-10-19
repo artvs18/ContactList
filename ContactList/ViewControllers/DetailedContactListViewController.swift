@@ -28,18 +28,15 @@ class DetailedContactListViewController: UITableViewController {
         if indexPath.row == 0 {
             content.text = person.email
             content.image = UIImage(systemName: "envelope")
-            content.textProperties.font = .boldSystemFont(ofSize: 17)
-            cell.contentConfiguration = content
-            
-            return cell
         } else {
             content.text = person.phone
             content.image = UIImage(systemName: "phone")
-            content.textProperties.font = .boldSystemFont(ofSize: 17)
-            cell.contentConfiguration = content
-            
-            return cell
         }
+        
+        content.textProperties.font = .boldSystemFont(ofSize: 17)
+        cell.contentConfiguration = content
+        
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

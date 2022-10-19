@@ -22,7 +22,7 @@ class DataStore {
         "Rick",
         "Joe",
         "William"
-    ]
+    ].shuffled()
     
     let surnames = [
         "Adams",
@@ -40,7 +40,7 @@ class DataStore {
         "Gates",
         "Willis",
         "Harrison"
-    ]
+    ].shuffled()
     
     let emails = [
         "apple@icloud.com",
@@ -58,7 +58,7 @@ class DataStore {
         "hacker@mail.com",
         "sunflower@gmail.com",
         "bigboy@mail.com"
-    ]
+    ].shuffled()
     
     let phones = [
         "1665339891",
@@ -76,5 +76,5 @@ class DataStore {
         "5789246574",
         "5846385763",
         "7853456347"
-    ]
+    ].shuffled()
 }

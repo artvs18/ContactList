@@ -17,20 +17,15 @@ struct Person {
     
     static func getPersonsList() -> [Person] {
         let dataManager = DataStore()
-        
-        var names = dataManager.names.shuffled()
-        var surnames = dataManager.surnames.shuffled()
-        var emails = dataManager.emails.shuffled()
-        var phones = dataManager.phones.shuffled()
-        
+
         var persons: [Person] = []
         
-        for _ in 1...dataManager.names.count {
+        for element in 0...dataManager.names.count - 1 {
             persons.append(Person(
-                name: names.removeLast(),
-                surname: surnames.removeLast(),
-                email: emails.removeLast(),
-                phone: phones.removeLast()
+                name: dataManager.names[element],
+                surname: dataManager.surnames[element],
+                email: dataManager.emails[element],
+                phone: dataManager.phones[element]
             ))
         }
         
