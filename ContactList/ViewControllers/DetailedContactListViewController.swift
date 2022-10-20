@@ -16,6 +16,10 @@ class DetailedContactListViewController: UITableViewController {
         personsList.count
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        personsList[section].fullName
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
@@ -37,9 +41,5 @@ class DetailedContactListViewController: UITableViewController {
         cell.contentConfiguration = content
         
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        personsList[section].fullName
     }
 }

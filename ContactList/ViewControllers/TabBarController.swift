@@ -15,14 +15,11 @@ class TabBarController: UITabBarController {
     }
     
     private func passDataToVC() {
+        guard let contactListVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let detailedContactListVC = viewControllers?.last as? DetailedContactListViewController else { return }
+        
         let personsList = Person.getPersonsList()
-        guard let viewControllers = self.viewControllers else { return }
-        viewControllers.forEach {
-            if let contactListVC = $0 as? ContactListViewController {
-                contactListVC.personsList = personsList
-            } else if let detailedContactListVC = $0 as? DetailedContactListViewController {
-                detailedContactListVC.personsList = personsList
-            }
-        }
+        contactListVC.personsList = personsList
+        detailedContactListVC.personsList = personsList
     }
 }

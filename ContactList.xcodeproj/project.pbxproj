@@ -71,7 +71,7 @@
 				C226D9AA28FF0949002EB2EB /* Services */,
 				C226D9A128FEF93D002EB2EB /* ViewControllers */,
 				C226D9A028FEF919002EB2EB /* Storyboards */,
-				C226D99428FEF661002EB2EB /* Assets.xcassets */,
+				C2F6433A2901C08600F247FB /* Resources */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -120,6 +120,14 @@
 				C226D9A728FF0907002EB2EB /* DataStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C2F6433A2901C08600F247FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C226D99428FEF661002EB2EB /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
